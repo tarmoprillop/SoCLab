@@ -1,0 +1,17 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed Mar 20 23:54:25 2013
+
+drc -z Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   gain1/state[2]_PWR_14_o_Mux_47_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   gain0/state[2]_PWR_14_o_Mux_47_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

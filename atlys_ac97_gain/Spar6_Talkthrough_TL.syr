@@ -1,0 +1,805 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Spar6_Talkthrough_TL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Spar6_Talkthrough_TL.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Spar6_Talkthrough_TL"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-csg324
+
+---- Source Options
+Top Module Name                    : Spar6_Talkthrough_TL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\up_down_counter.vhd" into library work
+Parsing entity <udcounter>.
+Parsing architecture <udcounter_a> of entity <udcounter>.
+Parsing VHDL file "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\Talkthrough_Parts.vhd" into library work
+Parsing package <Spar6_Parts>.
+Parsing entity <ac97>.
+Parsing architecture <arch> of entity <ac97>.
+Parsing entity <ac97cmd>.
+Parsing architecture <arch> of entity <ac97cmd>.
+Parsing VHDL file "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\gain.vhd" into library work
+Parsing entity <gain>.
+Parsing architecture <Behavioral> of entity <gain>.
+Parsing VHDL file "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\debounce.vhd" into library work
+Parsing entity <DBounce>.
+INFO:HDLCompiler:1676 - "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\debounce.vhd" Line 36. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <arch> of entity <dbounce>.
+Parsing VHDL file "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\Talkthrough_TL.vhd" into library work
+Parsing entity <Spar6_Talkthrough_TL>.
+Parsing architecture <arch> of entity <spar6_talkthrough_tl>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Spar6_Talkthrough_TL> (architecture <arch>) from library <work>.
+
+Elaborating entity <ac97> (architecture <arch>) from library <work>.
+
+Elaborating entity <DBounce> (architecture <arch>) from library <work>.
+
+Elaborating entity <udcounter> (architecture <udcounter_a>) with generics from library <work>.
+
+Elaborating entity <gain> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ac97cmd> (architecture <arch>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\Talkthrough_TL.vhd" Line 152: lr_gain should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Spar6_Talkthrough_TL>.
+    Related source file is "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\Talkthrough_TL.vhd".
+WARNING:Xst:647 - Input <VOLUME> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 18-bit register for signal <R_bus>.
+    Found 18-bit register for signal <L_bus>.
+    Summary:
+	inferred  36 D-type flip-flop(s).
+Unit <Spar6_Talkthrough_TL> synthesized.
+
+Synthesizing Unit <ac97>.
+    Related source file is "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\Talkthrough_Parts.vhd".
+    Found 1-bit register for signal <ac97_n_reset>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <ac97_ready_sig>.
+    Found 1-bit register for signal <ac97_sync>.
+    Found 20-bit register for signal <latch_cmd_addr>.
+    Found 20-bit register for signal <latch_cmd_data>.
+    Found 20-bit register for signal <latch_left_data>.
+    Found 20-bit register for signal <latch_right_data>.
+    Found 1-bit register for signal <ac97_sdata_out>.
+    Found 8-bit register for signal <bit_count>.
+    Found 20-bit register for signal <left_in_data>.
+    Found 20-bit register for signal <right_in_data>.
+    Found 13-bit register for signal <rst_counter>.
+    Found 13-bit adder for signal <rst_counter[12]_GND_6_o_add_5_OUT> created at line 153.
+    Found 8-bit adder for signal <bit_count[7]_GND_6_o_add_46_OUT> created at line 1241.
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_31_OUT<4:0>> created at line 228.
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_35_OUT<4:0>> created at line 237.
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_41_OUT<4:0>> created at line 253.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_6_o_X_6_o_Mux_31_o> created at line 228.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_6_o_X_6_o_Mux_35_o> created at line 237.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_6_o_X_6_o_Mux_41_o> created at line 253.
+    Found 8-bit comparator greater for signal <n0013> created at line 170
+    Found 8-bit comparator greater for signal <n0031> created at line 213
+    Found 8-bit comparator lessequal for signal <n0042> created at line 224
+    Found 8-bit comparator lessequal for signal <n0044> created at line 224
+    Found 8-bit comparator lessequal for signal <n0050> created at line 233
+    Found 8-bit comparator lessequal for signal <n0052> created at line 233
+    Found 8-bit comparator lessequal for signal <n0058> created at line 242
+    Found 8-bit comparator lessequal for signal <n0060> created at line 242
+    Found 8-bit comparator lessequal for signal <n0063> created at line 250
+    Found 8-bit comparator lessequal for signal <n0065> created at line 250
+    Found 8-bit comparator lessequal for signal <n0088> created at line 269
+    Found 8-bit comparator lessequal for signal <n0090> created at line 269
+    Found 8-bit comparator lessequal for signal <n0093> created at line 272
+    Found 8-bit comparator lessequal for signal <n0095> created at line 272
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred 147 D-type flip-flop(s).
+	inferred  14 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <ac97> synthesized.
+
+Synthesizing Unit <DBounce>.
+    Related source file is "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\debounce.vhd".
+    Found 1-bit register for signal <DFF1>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <q_add>.
+    Found 1-bit register for signal <DB_out>.
+    Found 21-bit register for signal <q_reg>.
+    Found 21-bit adder for signal <q_reg[20]_GND_7_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <DBounce> synthesized.
+
+Synthesizing Unit <udcounter>.
+    Related source file is "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\up_down_counter.vhd".
+        WIDTH = 5
+    Found 5-bit register for signal <cnt>.
+    Found 1-bit register for signal <up1>.
+    Found 1-bit register for signal <dw1>.
+    Found 5-bit adder for signal <cnt[4]_GND_8_o_add_1_OUT> created at line 1241.
+    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_4_OUT<4:0>> created at line 1308.
+    Found 5-bit comparator greater for signal <cnt[4]_PWR_9_o_LessThan_1_o> created at line 22
+    Found 5-bit comparator greater for signal <GND_8_o_cnt[4]_LessThan_3_o> created at line 24
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <udcounter> synthesized.
+
+Synthesizing Unit <gain>.
+    Related source file is "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\gain.vhd".
+        n = 18
+        m = 5
+    Found 5-bit register for signal <_n0156>.
+    Found 18-bit register for signal <in_latch>.
+    Found 18-bit register for signal <remainder>.
+    Found 18-bit register for signal <quot>.
+    Found 7-bit register for signal <count>.
+    Found 7-bit register for signal <gain>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <s>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | n_reset (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 18-bit adder for signal <in_latch[17]_GND_10_o_add_13_OUT> created at line 1253.
+    Found 7-bit adder for signal <gain_pos[6]_GND_10_o_add_16_OUT> created at line 1253.
+    Found 18-bit adder for signal <remainder[17]_gain[6]_add_24_OUT> created at line 97.
+    Found 18-bit adder for signal <quot[17]_GND_10_o_add_30_OUT> created at line 1241.
+    Found 18-bit adder for signal <quot[17]_GND_10_o_add_31_OUT> created at line 1241.
+    Found 7-bit subtractor for signal <count[6]_GND_10_o_sub_29_OUT<6:0>> created at line 1320.
+    Found 1-bit 18-to-1 multiplexer for signal <count[4]_X_9_o_Mux_18_o> created at line 86.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_ready>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 7-bit comparator greater for signal <n0025> created at line 85
+    Found 18-bit comparator greater for signal <n0032> created at line 96
+    WARNING:Xst:2404 -  FFs/Latches <gain_pos<6:5>> (without init value) have a constant value of 0 in block <gain>.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  74 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   2 Comparator(s).
+	inferred  27 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <gain> synthesized.
+
+Synthesizing Unit <ac97cmd>.
+    Related source file is "C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\Talkthrough_Parts.vhd".
+    Found 4-bit register for signal <cur_state>.
+INFO:Xst:1799 - State s3 is never reached in FSM <cur_state>.
+INFO:Xst:1799 - State s9 is never reached in FSM <cur_state>.
+INFO:Xst:1799 - State s10 is never reached in FSM <cur_state>.
+    Found finite state machine <FSM_1> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <ac97cmd> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 18
+ 13-bit adder                                          : 1
+ 18-bit adder                                          : 6
+ 21-bit adder                                          : 2
+ 5-bit addsub                                          : 1
+ 5-bit subtractor                                      : 3
+ 7-bit adder                                           : 2
+ 7-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 41
+ 1-bit register                                        : 14
+ 13-bit register                                       : 1
+ 18-bit register                                       : 8
+ 2-bit register                                        : 2
+ 20-bit register                                       : 6
+ 21-bit register                                       : 2
+ 5-bit register                                        : 3
+ 7-bit register                                        : 4
+ 8-bit register                                        : 1
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Comparators                                          : 20
+ 18-bit comparator greater                             : 2
+ 5-bit comparator greater                              : 2
+ 7-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 12
+# Multiplexers                                         : 65
+ 1-bit 18-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 40
+ 1-bit 20-to-1 multiplexer                             : 3
+ 18-bit 2-to-1 multiplexer                             : 14
+ 20-bit 2-to-1 multiplexer                             : 4
+ 7-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 3
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <latch_cmd_addr_0> in Unit <ac97_cont0> is equivalent to the following 17 FFs/Latches, which will be removed : <latch_cmd_addr_1> <latch_cmd_addr_2> <latch_cmd_addr_3> <latch_cmd_addr_4> <latch_cmd_addr_5> <latch_cmd_addr_6> <latch_cmd_addr_7> <latch_cmd_addr_8> <latch_cmd_addr_9> <latch_cmd_addr_10> <latch_cmd_addr_11> <latch_cmd_data_0> <latch_cmd_data_1> <latch_cmd_data_2> <latch_cmd_data_3> <latch_right_data_0> <latch_right_data_1> 
+WARNING:Xst:1710 - FF/Latch <latch_cmd_addr_0> (without init value) has a constant value of 0 in block <ac97_cont0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <latch_cmd_addr_12> (without init value) has a constant value of 0 in block <ac97_cont0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <latch_cmd_addr_18> (without init value) has a constant value of 0 in block <ac97_cont0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <latch_cmd_data_8> (without init value) has a constant value of 0 in block <ac97_cont0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <latch_cmd_data_9> (without init value) has a constant value of 0 in block <ac97_cont0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <latch_cmd_data_18> (without init value) has a constant value of 0 in block <ac97_cont0>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <DBounce>.
+The following registers are absorbed into counter <q_reg>: 1 register on signal <q_reg>.
+Unit <DBounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ac97>.
+The following registers are absorbed into counter <bit_count>: 1 register on signal <bit_count>.
+The following registers are absorbed into counter <rst_counter>: 1 register on signal <rst_counter>.
+Unit <ac97> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gain>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <gain> synthesized (advanced).
+
+Synthesizing (advanced) Unit <udcounter>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <udcounter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 11
+ 18-bit adder                                          : 6
+ 5-bit subtractor                                      : 3
+ 7-bit adder                                           : 2
+# Counters                                             : 7
+ 13-bit up counter                                     : 1
+ 21-bit up counter                                     : 2
+ 5-bit updown counter                                  : 1
+ 7-bit down counter                                    : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 306
+ Flip-Flops                                            : 306
+# Comparators                                          : 20
+ 18-bit comparator greater                             : 2
+ 5-bit comparator greater                              : 2
+ 7-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 12
+# Multiplexers                                         : 63
+ 1-bit 18-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 40
+ 1-bit 20-to-1 multiplexer                             : 3
+ 18-bit 2-to-1 multiplexer                             : 14
+ 20-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 3
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <latch_cmd_data_3> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_data_2> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_data_1> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_data_0> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_right_data_1> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_right_data_0> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_11> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_10> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_9> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_8> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_7> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_6> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_5> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_4> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_3> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_2> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_1> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <latch_cmd_addr_0> (without init value) has a constant value of 0 in block <ac97>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ac97cmd_cont0/FSM_1> on signal <cur_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0000
+ s1    | 0001
+ s2    | 0010
+ s3    | unreached
+ s4    | 0100
+ s5    | 0101
+ s6    | 0110
+ s7    | 0111
+ s8    | 1000
+ s9    | unreached
+ s10   | unreached
+ s11   | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <gain0/FSM_0> on signal <state[1:3]> with user encoding.
+Optimizing FSM <gain1/FSM_0> on signal <state[1:3]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 000
+ sign         | 001
+ divide       | 010
+ divide2      | 011
+ sign2        | 100
+ result_ready | 101
+--------------------------
+INFO:Xst:2261 - The FF/Latch <gain_5> in Unit <gain> is equivalent to the following FF/Latch, which will be removed : <gain_6> 
+
+Optimizing unit <Spar6_Talkthrough_TL> ...
+
+Optimizing unit <ac97cmd> ...
+
+Optimizing unit <ac97> ...
+
+Optimizing unit <udcounter> ...
+
+Optimizing unit <gain> ...
+WARNING:Xst:1710 - FF/Latch <ac97_cont0/latch_cmd_data_18> (without init value) has a constant value of 0 in block <Spar6_Talkthrough_TL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ac97_cont0/latch_cmd_data_9> (without init value) has a constant value of 0 in block <Spar6_Talkthrough_TL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ac97_cont0/latch_cmd_data_8> (without init value) has a constant value of 0 in block <Spar6_Talkthrough_TL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ac97_cont0/latch_cmd_addr_18> (without init value) has a constant value of 0 in block <Spar6_Talkthrough_TL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ac97_cont0/latch_cmd_addr_12> (without init value) has a constant value of 0 in block <Spar6_Talkthrough_TL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ac97_cont0/rst_counter_12> has a constant value of 0 in block <Spar6_Talkthrough_TL>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <gain1/count_6> in Unit <Spar6_Talkthrough_TL> is equivalent to the following FF/Latch, which will be removed : <gain1/count_5> 
+INFO:Xst:2261 - The FF/Latch <gain0/count_6> in Unit <Spar6_Talkthrough_TL> is equivalent to the following FF/Latch, which will be removed : <gain0/count_5> 
+INFO:Xst:2261 - The FF/Latch <ac97_cont0/latch_cmd_data_14> in Unit <Spar6_Talkthrough_TL> is equivalent to the following FF/Latch, which will be removed : <ac97_cont0/latch_cmd_data_6> 
+INFO:Xst:2261 - The FF/Latch <ac97_cont0/latch_cmd_data_17> in Unit <Spar6_Talkthrough_TL> is equivalent to the following 2 FFs/Latches, which will be removed : <ac97_cont0/latch_cmd_data_16> <ac97_cont0/latch_cmd_data_11> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Spar6_Talkthrough_TL, actual ratio is 2.
+FlipFlop ac97_cont0/bit_count_0 has been replicated 1 time(s)
+FlipFlop ac97_cont0/bit_count_1 has been replicated 1 time(s)
+FlipFlop ac97_cont0/bit_count_6 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 371
+ Flip-Flops                                            : 371
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Spar6_Talkthrough_TL.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 880
+#      GND                         : 1
+#      INV                         : 46
+#      LUT1                        : 60
+#      LUT2                        : 87
+#      LUT3                        : 97
+#      LUT4                        : 112
+#      LUT5                        : 52
+#      LUT6                        : 83
+#      MUXCY                       : 168
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 170
+# FlipFlops/Latches                : 373
+#      FD                          : 23
+#      FD_1                        : 40
+#      FDC                         : 6
+#      FDCE                        : 144
+#      FDE                         : 56
+#      FDPE                        : 5
+#      FDR                         : 19
+#      FDRE                        : 78
+#      LD                          : 2
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 15
+#      IBUF                        : 7
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             373  out of  54576     0%  
+ Number of Slice LUTs:                  537  out of  27288     1%  
+    Number used as Logic:               537  out of  27288     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    606
+   Number with an unused Flip Flop:     233  out of    606    38%  
+   Number with an unused LUT:            69  out of    606    11%  
+   Number of fully used LUT-FF pairs:   304  out of    606    50%  
+   Number of unique control sets:        28
+
+IO Utilization: 
+ Number of IOs:                          22
+ Number of bonded IOBs:                  17  out of    218     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------+----------------------------+-------+
+Clock Signal                                              | Clock buffer(FF name)      | Load  |
+----------------------------------------------------------+----------------------------+-------+
+clk                                                       | BUFGP                      | 263   |
+BIT_CLK                                                   | BUFGP                      | 108   |
+gain1/state[2]_PWR_14_o_Mux_47_o(gain1/state__n0285<1>1:O)| NONE(*)(gain1/output_ready)| 1     |
+gain0/state[2]_PWR_14_o_Mux_47_o(gain0/state__n0285<1>1:O)| NONE(*)(gain0/output_ready)| 1     |
+----------------------------------------------------------+----------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 9.422ns (Maximum Frequency: 106.135MHz)
+   Minimum input arrival time before clock: 5.328ns
+   Maximum output required time after clock: 5.380ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.948ns (frequency: 168.131MHz)
+  Total number of paths / destination ports: 7339 / 504
+-------------------------------------------------------------------------
+Delay:               5.948ns (Levels of Logic = 7)
+  Source:            gain1/gain_pos_0 (FF)
+  Destination:       gain1/remainder_17 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: gain1/gain_pos_0 to gain1/remainder_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.525   1.220  gain1/gain_pos_0 (gain1/gain_pos_0)
+     LUT4:I0->O            1   0.254   0.000  gain1/Mcompar_n0032_lut<0> (gain1/Mcompar_n0032_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gain1/Mcompar_n0032_cy<0> (gain1/Mcompar_n0032_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gain1/Mcompar_n0032_cy<1> (gain1/Mcompar_n0032_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gain1/Mcompar_n0032_cy<2> (gain1/Mcompar_n0032_cy<2>)
+     MUXCY:CI->O           1   0.235   0.682  gain1/Mcompar_n0032_cy<3> (gain1/Mcompar_n0032_cy<3>)
+     LUT6:I5->O            2   0.254   0.726  gain1/Mcompar_n0032_cy<4> (gain1/Mcompar_n0032_cy<4>)
+     LUT5:I4->O           18   0.254   1.234  gain1/_n0237_inv1 (gain1/_n0237_inv)
+     FDCE:CE                   0.302          gain1/quot_0
+    ----------------------------------------
+    Total                      5.948ns (2.086ns logic, 3.862ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BIT_CLK'
+  Clock period: 9.422ns (frequency: 106.135MHz)
+  Total number of paths / destination ports: 1425 / 128
+-------------------------------------------------------------------------
+Delay:               4.711ns (Levels of Logic = 3)
+  Source:            ac97_cont0/bit_count_4 (FF)
+  Destination:       ac97_cont0/left_in_data_19 (FF)
+  Source Clock:      BIT_CLK rising
+  Destination Clock: BIT_CLK falling
+
+  Data Path: ac97_cont0/bit_count_4 to ac97_cont0/left_in_data_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.525   1.585  ac97_cont0/bit_count_4 (ac97_cont0/bit_count_4)
+     LUT6:I1->O            2   0.254   0.726  ac97_cont0/GND_6_o_bit_count[7]_AND_9_o1 (ac97_cont0/GND_6_o_bit_count[7]_AND_9_o2)
+     LUT6:I5->O           11   0.254   1.039  ac97_cont0/GND_6_o_bit_count[7]_AND_9_o3 (ac97_cont0/GND_6_o_bit_count[7]_AND_9_o)
+     LUT3:I2->O            1   0.254   0.000  ac97_cont0/left_in_data_19_rstpot (ac97_cont0/left_in_data_19_rstpot)
+     FD_1:D                    0.074          ac97_cont0/left_in_data_19
+    ----------------------------------------
+    Total                      4.711ns (1.361ns logic, 3.350ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 254 / 254
+-------------------------------------------------------------------------
+Offset:              5.328ns (Levels of Logic = 2)
+  Source:            n_reset (PAD)
+  Destination:       R_bus_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: n_reset to R_bus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.875  n_reset_IBUF (n_reset_IBUF)
+     INV:I->O            196   0.255   2.411  debounce0/nreset_inv1_INV_0 (ac97_cont0/n_reset_inv)
+     FDR:R                     0.459          ac97_cont0/ac97_n_reset
+    ----------------------------------------
+    Total                      5.328ns (2.042ns logic, 3.286ns route)
+                                       (38.3% logic, 61.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BIT_CLK'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              2.812ns (Levels of Logic = 2)
+  Source:            SDATA_IN (PAD)
+  Destination:       ac97_cont0/right_in_data_0 (FF)
+  Destination Clock: BIT_CLK falling
+
+  Data Path: SDATA_IN to ac97_cont0/right_in_data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   1.156  SDATA_IN_IBUF (SDATA_IN_IBUF)
+     LUT5:I0->O            1   0.254   0.000  ac97_cont0/right_in_data_0_rstpot (ac97_cont0/right_in_data_0_rstpot)
+     FD_1:D                    0.074          ac97_cont0/right_in_data_0
+    ----------------------------------------
+    Total                      2.812ns (1.656ns logic, 1.156ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              5.380ns (Levels of Logic = 2)
+  Source:            vol_ctrl/cnt_0 (FF)
+  Destination:       LED<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: vol_ctrl/cnt_0 to LED<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            10   0.525   1.007  vol_ctrl/cnt_0 (vol_ctrl/cnt_0)
+     INV:I->O              1   0.255   0.681  LED<0>1_INV_0 (LED_0_OBUF)
+     OBUF:I->O                 2.912          LED_0_OBUF (LED<0>)
+    ----------------------------------------
+    Total                      5.380ns (3.692ns logic, 1.688ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BIT_CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            ac97_cont0/ac97_sync (FF)
+  Destination:       SYNC (PAD)
+  Source Clock:      BIT_CLK rising
+
+  Data Path: ac97_cont0/ac97_sync to SYNC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  ac97_cont0/ac97_sync (ac97_cont0/ac97_sync)
+     OBUF:I->O                 2.912          SYNC_OBUF (SYNC)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock BIT_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BIT_CLK        |    6.926|         |    4.711|         |
+clk            |    2.569|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+BIT_CLK                         |    5.062|    1.723|         |         |
+clk                             |    5.948|         |         |         |
+gain0/state[2]_PWR_14_o_Mux_47_o|         |    2.117|         |         |
+gain1/state[2]_PWR_14_o_Mux_47_o|         |    2.117|         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gain0/state[2]_PWR_14_o_Mux_47_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.690|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gain1/state[2]_PWR_14_o_Mux_47_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.690|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.49 secs
+ 
+--> 
+
+Total memory usage is 260916 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

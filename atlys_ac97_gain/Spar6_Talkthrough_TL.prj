@@ -1,0 +1,5 @@
+vhdl work "up_down_counter.vhd"
+vhdl work "Talkthrough_Parts.vhd"
+vhdl work "gain.vhd"
+vhdl work "debounce.vhd"
+vhdl work "Talkthrough_TL.vhd"

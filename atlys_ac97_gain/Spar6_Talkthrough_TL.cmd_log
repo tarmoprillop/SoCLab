@@ -1,0 +1,170 @@
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+netgen -intstyle ise -ar Structure -tm Spar6_Talkthrough_TL -w -dir netgen/synthesis -ofmt vhdl -sim Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+xst -intstyle ise -ifn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.xst" -ofn "C:/Users/Tarmo/Desktop/FPGA/atlys_ac97_gain/Spar6_Talkthrough_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spar6_Talkthrough_TL.ucf -p xc6slx45-csg324-2 Spar6_Talkthrough_TL.ngc Spar6_Talkthrough_TL.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ngd Spar6_Talkthrough_TL.pcf 
+par -w -intstyle ise -ol high -mt off Spar6_Talkthrough_TL_map.ncd Spar6_Talkthrough_TL.ncd Spar6_Talkthrough_TL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Spar6_Talkthrough_TL.twx Spar6_Talkthrough_TL.ncd -o Spar6_Talkthrough_TL.twr Spar6_Talkthrough_TL.pcf -ucf Spar6_Talkthrough_TL.ucf 
+bitgen -intstyle ise -f Spar6_Talkthrough_TL.ut Spar6_Talkthrough_TL.ncd 

@@ -1,0 +1,21 @@
+Release 14.2 - netgen P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm Spar6_Talkthrough_TL -w
+-dir netgen/synthesis -ofmt vhdl -sim Spar6_Talkthrough_TL.ngc
+Spar6_Talkthrough_TL_synthesis.vhd  
+
+Reading design 'Spar6_Talkthrough_TL.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'C:\Users\Tarmo\Desktop\FPGA\atlys_ac97_gain\netgen\synthesis\Spar6_Talkthrough_
+TL_synthesis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 139464 kilobytes
